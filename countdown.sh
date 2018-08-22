@@ -1,4 +1,4 @@
-secs=$((1 * 60))
+secs=$2
 echo "------------------------"
 echo "$1 Counting down from $secs"
 hostname
