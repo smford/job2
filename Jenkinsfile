@@ -11,7 +11,7 @@ pipeline {
             }
             steps {
                 echo 'JOB2 BUILD'
-                sh './countdown.sh "build step"'
+                sh 'bash ./countdown.sh "build step"'
             }
         }
         stage('Test') {
