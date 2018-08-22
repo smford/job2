@@ -11,7 +11,7 @@ pipeline {
             }
             steps {
                 echo 'JOB2 BUILD'
-                sh 'bash ./countdown.sh "build step" 20'
+                sh 'bash ./countdown.sh "build step" 10'
             }
         }
         stage('Test') {
@@ -20,7 +20,7 @@ pipeline {
             }
             steps {
                 echo 'JOB2 Testing..'
-                sh 'bash ./countdown.sh "testing step" 20'
+                sh 'bash ./countdown.sh "testing step" 10'
             }
         }
         stage('Deploy') {
@@ -29,7 +29,7 @@ pipeline {
             }
             steps {
                 echo 'JOB2 Deploying....'
-                sh 'bash ./countdown.sh "deploying step" 20'
+                sh 'bash ./countdown.sh "deploying step" 10'
             }
         }
     }
