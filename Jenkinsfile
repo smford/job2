@@ -20,7 +20,7 @@ pipeline {
             }
             steps {
                 echo 'JOB2 Testing..'
-                sh './countdown.sh "testing step"'
+                sh 'bash ./countdown.sh "testing step"'
             }
         }
         stage('Deploy') {
@@ -29,7 +29,7 @@ pipeline {
             }
             steps {
                 echo 'JOB2 Deploying....'
-                sh './countdown.sh "deploying step"'
+                sh 'bash ./countdown.sh "deploying step"'
             }
         }
     }
