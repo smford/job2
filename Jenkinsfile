@@ -1,4 +1,8 @@
 pipeline {
+    agent {
+        label 'docker-jnlp'
+    }
+
     stages {
 
         stage('Build') {
